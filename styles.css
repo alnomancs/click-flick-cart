@@ -4,15 +4,13 @@ body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-/* Start Top left side and menubar */
 .container{
-    margin: 0 7% 0 7%;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr)
+    margin: 2% 7% 0 7%;
+    border:1px solid;
 }
-.top{
-    margin: 1% 0 1%;
-    height: 120px;
+/* start header */
+
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,29 +20,22 @@ nav a{
     padding-right: 20px;
     color: black;
     font-size: 16px;
-    
 }
-/* End Top left side and menubar */
+/* end header */
 
-/* Start Banner */
+
 .banner {
-    height: 480px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding: 0 80px;
 }
 .banner-detail{
-    width: 60%;
-    padding-right: 30px;
-    height: 450px;
+
 }
 .banner-detail h1{
-    margin:0px 195px 20px 0 ;
     font-size: 3em;
-}
-.banner-detail p{
-    margin: 0px 340px 20px 0 ;
 }
 .banner-detail a{
     text-decoration: none;
@@ -54,14 +45,11 @@ nav a{
     color: white;
 }
 .banner-photo{
-    width: 40%;
+    /* width: 40%;
     height: 477px;
-    background-image: url(images/Circle\ design.svg);
-    background-repeat: no-repeat;
+     */
 }
-/* End Banner */
 
-/* Start company */
 .company{
     padding: 5% 7%;
 }
@@ -76,9 +64,7 @@ hr{
     justify-content: space-between;
     align-items: center;
 }
-/* End Company */
 
-/* Start Product Info */
 .product-info{
     display: flex;
     flex-direction: column;
@@ -122,7 +108,6 @@ hr{
 }
 
 
-/* End Product Info */
 
 
 .blogs{
@@ -166,5 +151,49 @@ footer a{
     font-size: 36px;
     padding-right: 10px;
     color: white;
+}
 
+/* Media Query */
+
+/* mobile view */
+@media only screen and (max-width:688px) {
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* start header */
+    .header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navbar{
+        display: none;
+    }
+    /* end header */
+
+    
+    
+}
+
+/* tablet view */
+@media only screen and 
+(min-width:688px) and (max-width:992px){
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+    /* start header */
+    .header{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navbar{
+        display: none;
+    }   
+    /* end header */
+    
+    
 }

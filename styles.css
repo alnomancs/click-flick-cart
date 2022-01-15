@@ -48,7 +48,7 @@ nav a{
 }
 .banner-detail a{
     text-decoration: none;
-    background-color: darkseagreen;
+    background-color: rgb(236, 5, 132);
     padding: 6px 20px;
     border-radius: 30px;
     color: white;
@@ -61,13 +61,9 @@ nav a{
 }
 /* End Banner */
 
-.main{
-    /* border: 1px solid; */
-}
-
 /* Start company */
 .company{
-    padding: 1% 7%;
+    padding: 5% 7%;
 }
 hr{
     border: 0;
@@ -81,3 +77,49 @@ hr{
     align-items: center;
 }
 /* End Company */
+
+/* Start Product Info */
+.product-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.product-title h1{
+    margin: 0 0 50px 0;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 0 80px;
+}
+.product{
+    height: 430px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 20%);
+}
+.fa-star, .fa-star-half-alt{
+    color: rgb(250, 212, 0);
+}
+.rating-number{
+    padding-left: 10px;
+}
+.item{
+    margin: 0 0 10px 0;
+}
+.product-see-more{
+    margin-top: 30px;
+    padding-left: 940px;
+}
+.product-see-more a{
+    text-decoration: none;
+    color: rgb(236, 5, 132);
+    padding: 6px 20px;
+    border-radius: 30px;
+    
+}
+
+
+/* End Product Info */

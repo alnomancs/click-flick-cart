@@ -6,7 +6,7 @@ body{
 }
 .container{
     margin: 2% 7% 0 7%;
-    border:1px solid;
+    /* border:1px solid; */
 }
 /* start header */
 
@@ -23,19 +23,11 @@ nav a{
 }
 /* end header */
 
-
+/* start banner */
 .banner {
-    
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 50px;
-    padding: 0 80px;
-}
-.banner-detail{
-
-}
-.banner-detail h1{
-    font-size: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .banner-detail a{
     text-decoration: none;
@@ -44,11 +36,14 @@ nav a{
     border-radius: 30px;
     color: white;
 }
-.banner-photo{
-    /* width: 40%;
-    height: 477px;
-     */
+.banner-photo img{
+    background-image: url(images/Circle\ design.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
 }
+/* end banner */
+
+/* start company */
 
 .company{
     padding: 5% 7%;
@@ -64,6 +59,12 @@ hr{
     justify-content: space-between;
     align-items: center;
 }
+/* end company */
+
+
+
+
+
 
 .product-info{
     display: flex;
@@ -173,8 +174,34 @@ footer a{
     }
     /* end header */
 
-    
-    
+    /* start banner */
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-detail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        line-height: 30px;
+    }
+    .banner-photo img{
+        background-size: 90% 90%;
+        background-position: center;
+    }
+    /* end banner */
+
+    /* start company */
+    .company-logo{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 32px;
+        align-content: space-between;
+        justify-content: space-evenly;
+    }
+    /* end company */
 }
 
 /* tablet view */
@@ -194,6 +221,36 @@ footer a{
         display: none;
     }   
     /* end header */
+
+    /* start banner */
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-detail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        line-height: 30px;
+    }
+    .banner-photo img{
+        background-size: 90% 90%;
+        background-position: center;
+    }
+    /* end banner */
+
+    /* start company */
+    .company-logo{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 32px;
+        align-content: space-between;
+        justify-content: space-evenly;
+    }
+    /* end company */
+    
     
     
 }

@@ -1,22 +1,22 @@
+/* Import Google font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 body{
     margin: 0;
     font-family: 'Poppins', sans-serif;
 }
-
+/* Start Top left side and menubar */
 .container{
-
-    margin: 0 5% 0 5%;
+    margin: 0 7% 0 7%;
     display: grid;
     grid-template-columns: repeat(1, 1fr)
 }
 .top{
     margin: 1% 0 1%;
+    height: 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 nav a{
     text-decoration: none;
     padding-right: 20px;
@@ -24,7 +24,39 @@ nav a{
     font-size: 16px;
     
 }
-.banner{
-    
-    height: 400px;
+/* End Top left side and menubar */
+
+/* Start Banner */
+.banner {
+    height: 480px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
+.banner-detail{
+    width: 60%;
+    padding-right: 30px;
+    height: 450px;
+}
+.banner-detail h1{
+    margin:0px 195px 20px 0 ;
+    font-size: 3em;
+}
+.banner-detail p{
+    margin: 0px 340px 20px 0 ;
+}
+.banner-detail a{
+    text-decoration: none;
+    background-color: darkseagreen;
+    padding: 6px 20px;
+    border-radius: 30px;
+    color: white;
+}
+.banner-photo{
+    width: 40%;
+    height: 477px;
+    background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+}
+/* End Banner */

@@ -123,3 +123,26 @@ hr{
 
 
 /* End Product Info */
+
+
+.blogs{
+    margin: 0 7% 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blogs img{
+    border-radius: 14px;
+}
+.blog-detail{
+    padding: 0 40px 0 133px;
+}
+
+.blog-detail a{
+    text-decoration: none;
+    background-color: rgb(236, 5, 132);
+    padding: 6px 20px;
+    border-radius: 30px;
+    color: white;
+}

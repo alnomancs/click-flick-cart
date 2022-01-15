@@ -60,3 +60,24 @@ nav a{
     background-repeat: no-repeat;
 }
 /* End Banner */
+
+.main{
+    /* border: 1px solid; */
+}
+
+/* Start company */
+.company{
+    padding: 1% 7%;
+}
+hr{
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #ffffff, #818181, #ffffff);
+  
+}
+.company-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* End Company */

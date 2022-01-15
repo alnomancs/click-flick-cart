@@ -126,7 +126,7 @@ hr{
 
 
 .blogs{
-    margin: 0 7% 0 7%;
+    margin: 7% 7% 7% 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -145,4 +145,26 @@ hr{
     padding: 6px 20px;
     border-radius: 30px;
     color: white;
+}
+footer{
+    height: 28git0px;
+    background-color: black;
+    color: white;
+    display: grid;
+    grid-template-columns: 1 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.footer-item{
+    display: grid;
+    grid-template-columns: 1 1fr;
+    align-items: center;
+    justify-items: center;
+}
+footer a{
+    text-decoration: none;
+    font-size: 36px;
+    padding-right: 10px;
+    color: white;
+
 }

@@ -44,7 +44,6 @@ nav a{
 /* end banner */
 
 /* start company */
-
 .company{
     padding: 5% 7%;
 }
@@ -61,11 +60,7 @@ hr{
 }
 /* end company */
 
-
-
-
-
-
+/* start product */
 .product-info{
     display: flex;
     flex-direction: column;
@@ -105,26 +100,22 @@ hr{
     color: rgb(236, 5, 132);
     padding: 6px 20px;
     border-radius: 30px;
-    
 }
+/* end product */
 
-
-
-
+/* start blog */
 .blogs{
-    margin: 7% 7% 7% 7%;
+    margin: 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .blogs img{
     border-radius: 14px;
 }
 .blog-detail{
     padding: 0 40px 0 133px;
 }
-
 .blog-detail a{
     text-decoration: none;
     background-color: rgb(236, 5, 132);
@@ -132,6 +123,9 @@ hr{
     border-radius: 30px;
     color: white;
 }
+/* end blog */
+
+/* start footer */
 footer{
     height: 28git0px;
     background-color: black;
@@ -141,18 +135,14 @@ footer{
     align-items: center;
     justify-items: center;
 }
-.footer-item{
-    display: grid;
-    grid-template-columns: 1 1fr;
-    align-items: center;
-    justify-items: center;
-}
+
 footer a{
     text-decoration: none;
     font-size: 36px;
     padding-right: 10px;
     color: white;
 }
+/* end footer */
 
 /* Media Query */
 
@@ -202,6 +192,45 @@ footer a{
         justify-content: space-evenly;
     }
     /* end company */
+
+    /* start product */
+    .product-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .products {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        padding: 0 80px;
+    }
+    .product-see-more{
+        margin-top: 30px;
+        padding-left: 214px;
+    }
+    /* end product */
+
+    /* start blog */
+    .blogs{
+        margin: 7%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .blogs img{
+        height: 100%;
+        width: 100%;
+        border-radius: 14px;
+    }
+    .blog-detail{
+        padding: 0 40px 0 30px;
+    }
+    /* end blog */
+
+
+
 }
 
 /* tablet view */
@@ -250,6 +279,37 @@ footer a{
         justify-content: space-evenly;
     }
     /* end company */
+
+    /* start product */
+    .product-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+        padding: 0 80px;
+    }
+    .product-see-more{
+        margin-top: 30px;
+        padding-left: 580px;
+    }
+    /* start product */
+
+    /* start blog */
+    .blogs{
+        margin: 7%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .blog-detail{
+        padding: 0 40px 0 30px;
+    }
+    /* end blog */
     
     
     

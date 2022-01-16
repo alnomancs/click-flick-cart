@@ -36,11 +36,19 @@ nav a{
     border-radius: 30px;
     color: white;
 }
+
 .banner-photo img{
     background-image: url(images/Circle\ design.svg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    transition: transform 1s;
 }
+
+.banner-photo img:hover{
+    transform: rotate(360deg) scale(1.5);
+}
+
+
 /* end banner */
 
 /* start company */

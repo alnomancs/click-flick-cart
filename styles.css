@@ -136,7 +136,7 @@ hr{
 /* start footer */
 footer{
     height: 280px;
-    background-color: black;
+    background-color: rgb(0, 14, 36);
     color: white;
     display: grid;
     grid-template-columns: 1 1fr;
